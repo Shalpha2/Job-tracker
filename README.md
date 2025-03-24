@@ -10,16 +10,16 @@ A responsive web application that helps job seekers organize their search proces
 - Write well-structured documentation including code comments
 
 ## Features
-- Add job applications (job title, company name, application status)
-- View and filter job applications
-- API integration.Fetch jobs from [API]
-- Store data locally or via a mock API
+- Add job applications  via a form (job title, company name, application status)
+- Display a list of saved applications
+- Fetch jobs from a public API
+- Edit or delete saved applications
 
 ## Technologies Used
 - HTML
 - CSS
 - JavaScript
-- Use API(Adzuna Job API)
+- Use APi
 - JSON Server  for local development
 
 ## How to Run
@@ -36,5 +36,6 @@ A responsive web application that helps job seekers organize their search proces
 - User authentication (Phase 3)
 - AI-powered application suggestions
 -  Calendar integration for interviews
+-Implement filtering or sorting by status or company 
 
 
