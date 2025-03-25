@@ -1,24 +1,54 @@
 {
-  "applications": [
-    {
-      "id": "1",
-      "jobTitle": "Frontend Developer",
-      "company": "Tech Corp",
-      "status": "Applied",
-      "notes": "Followed up via email on 20th March"
-    },
-    {
-      "id": "2",
-      "jobTitle": "Marketing Analyst",
-      "company": "Growthify",
-      "status": "Interview",
-      "notes": "Interview scheduled for next Monday"
-    },
-    {
-      "id": "68fc",
-      "jobTitle": "frontend engineer",
-      "company": "safaricom",
-      "status": "Offer"
-    }
-  ]
-}
+    "applications": [
+      {
+        "id": 1,
+        "jobTitle": "Frontend Developer",
+        "company": "TechCorp",
+        "status": "Applied",
+        "notes": "Sent application via LinkedIn"
+      },
+      {
+        "id": 2,
+        "jobTitle": "Backend Engineer",
+        "company": "DevSolutions",
+        "status": "Interview",
+        "notes": "Technical interview scheduled for Monday"
+      },
+      {
+        "id": 3,
+        "jobTitle": "Full Stack Developer",
+        "company": "InnovateX",
+        "status": "Offer",
+        "notes": "Received offer, considering salary"
+      },
+      {
+        "id": 4,
+        "jobTitle": "Data Analyst",
+        "company": "DataWiz",
+        "status": "Rejected",
+        "notes": "Got a rejection email last Friday"
+      },
+      {
+        "id": 5,
+        "jobTitle": "UI/UX Designer",
+        "company": "CreativeHub",
+        "status": "Applied",
+        "notes": "Application submitted through company website"
+      },
+      {
+        "id": 6,
+        "jobTitle": "Mobile Developer",
+        "company": "AppForge",
+        "status": "Interview",
+        "notes": "First interview done, waiting for next round"
+      },
+      {
+        "id": 7,
+        "jobTitle": "Cloud Engineer",
+        "company": "SkyNet",
+        "status": "Applied",
+        "notes": "Reached out to recruiter on Twitter"
+      }
+    ]
+  }
+  

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
   
       const newApplication = {
-        jobtitle: event.target.jobTitle.value,
+        jobTitle: event.target.jobTitle.value,
         company: event.target.company.value,
         status: event.target.status.value,
         notes: event.target.notes.value,
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
         .then((response) => response.json())
         .then((app) => {
-          renderapplication(app); 
+          renderapplication([app]); 
           form.reset(); 
         });
     }
@@ -40,28 +40,29 @@ document.addEventListener("DOMContentLoaded", function () {
         const li = document.createElement("li");
         const deleteButton = document.createElement("button")
         deleteButton.textContent = "Delete";
-        deleteButton.style.marginLeft = "10px",
-        deleteButton.addEventListener("click", handleDelete)
+        deleteButton.classList.add("delete-btn");//styling delete button/css
+
+
+        deleteButton.addEventListener("click",()=> handleDelete(app.id, li))
         li.innerHTML = `
-          <strong>${app.jobTitle}</strong> at ${app.company} — <em>${app.status}</em>
+          <strong>${app.jobTitle}</strong> at ${app.company} — <em>${app.status}</em><br/> <small><strong>Notes: </strong> ${app.notes || "None"}</small>
         `;
         li.appendChild(deleteButton),
         applicationsList.appendChild(li);
       });
     }
-   
     function handleDelete(appId, li) {
         fetch(`http://localhost:3000/applications/${appId}`, {
           method: "DELETE",
         })
-          .then((res) => {
-            if (res.ok) {
+          .then((response) => {
+            if (response.ok) {
               li.remove(); // Remove from DOM if delete is successful
             }
           })
           .catch((error) => console.error("Error deleting application:", error));
       }
-      
+    
   });
 
   

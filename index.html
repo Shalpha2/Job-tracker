@@ -14,12 +14,12 @@
         <div class="form-container">
           <h2>Add New Application</h2>
           <form id="job-form">
-            <label for="job-title">Job Title</label>
-               <input type="text" id="job-title" name="job-title" required autocomplete="off"/>
-               
+            <label for="jobTitle">Job Title</label>
+               <input type="text" id="jobTitle" name="jobTitle" required autocomplete="off"/>
+
             <label for="company">Company</label>
               <input type="text" id="company" name="company" required autocomplete="off"/>
-            </label for="Status">Application status <label>
+            </label for="status">Application Status <label>
               <select id="status" name="status" required>
                 <option value="Applied">Applied</option>
                 <option value="Interview">Interview</option>
@@ -35,9 +35,9 @@
         
         <div class="applications-container">
           <h2>My Applications</h2>
-          <div id="applications-list">
+          <ul id="applications-list">
             
-          </div>
+          </ul>
         </div>
     <script src = "index.js"></script>
 </body>
