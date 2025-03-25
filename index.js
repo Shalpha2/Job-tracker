@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         jobtitle: event.target.jobTitle.value,
         company: event.target.company.value,
         status: event.target.status.value,
+        notes: event.target.notes.value,
       };
   
       
@@ -38,14 +39,29 @@ document.addEventListener("DOMContentLoaded", function () {
       applications.forEach((app) => {
         const li = document.createElement("li");
         const deleteButton = document.createElement("button")
+        deleteButton.textContent = "Delete";
+        deleteButton.style.marginLeft = "10px",
+        deleteButton.addEventListener("click", handleDelete)
         li.innerHTML = `
-          <strong>${app.jobtitle}</strong> at ${app.company} — <em>${app.status}</em>
+          <strong>${app.jobTitle}</strong> at ${app.company} — <em>${app.status}</em>
         `;
         li.appendChild(deleteButton),
         applicationsList.appendChild(li);
       });
     }
    
+    function handleDelete(appId, li) {
+        fetch(`http://localhost:3000/applications/${appId}`, {
+          method: "DELETE",
+        })
+          .then((res) => {
+            if (res.ok) {
+              li.remove(); // Remove from DOM if delete is successful
+            }
+          })
+          .catch((error) => console.error("Error deleting application:", error));
+      }
+      
   });
 
   
