@@ -15,18 +15,18 @@
           <h2>Add New Application</h2>
           <form id="job-form">
             <label for="job-title">Job Title</label>
-               <input type="text" name="job-title" required autocomplete="off" />
+               <input type="text" id="job-title" name="job-title" required autocomplete="off"/>
             <label for="company">Company</label>
-              <input type="text" name="company" required autocomplete="off" />
-            </label for=" Application Status">Application status <label>
-              <select id="status">
+              <input type="text" id="company" name="company" required autocomplete="off"/>
+            </label for="Status">Application status <label>
+              <select id="status" name="status" required>
                 <option value="Applied">Applied</option>
                 <option value="Interview">Interview</option>
                 <option value="Offer">Offer</option>
                 <option value="Rejected">Rejected</option>
               </select>
             <label for="notes">Notes</label>
-              <textarea text="notes" placeholder="Write anything"></textarea>
+              <textarea id="notes" name="notes" placeholder="Write anything"></textarea>
             <button type="submit">Add Application</button>
           </form>
         </div>
@@ -36,9 +36,8 @@
           <h2>My Applications</h2>
           <div id="applications-list">
             <ul>
-                <li></li>
+                <li>frontend engineer</li>
             </ul>
-            
           </div>
         </div>
     <script src = "index.js"></script>

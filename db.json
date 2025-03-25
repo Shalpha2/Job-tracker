@@ -1,0 +1,20 @@
+{
+    "applications": [
+      {
+        "id": 1,
+        "jobTitle": "Frontend Developer",
+        "company": "Tech Corp",
+        "status": "Applied",
+        "notes": "Followed up via email on 20th March"
+      },
+      {
+        "id": 2,
+        "jobTitle": "Marketing Analyst",
+        "company": "Growthify",
+        "status": "Interview",
+        "notes": "Interview scheduled for next Monday"
+      }
+    ]
+  }
+  
+  
