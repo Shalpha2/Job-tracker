@@ -15,9 +15,9 @@
           <h2>Add New Application</h2>
           <form id="job-form">
             <label for="job-title">Job Title</label>
-               <input type="text" id="job-title" required />
+               <input type="text" name="job-title" required autocomplete="off" />
             <label for="company">Company</label>
-              <input type="text" id="company" required />
+              <input type="text" name="company" required autocomplete="off" />
             </label for=" Application Status">Application status <label>
               <select id="status">
                 <option value="Applied">Applied</option>
@@ -31,14 +31,14 @@
           </form>
         </div>
     
-        <!-- Applications Display Section -->
+        
         <div class="applications-container">
           <h2>My Applications</h2>
           <div id="applications-list">
             <ul>
                 <li></li>
             </ul>
-            <!-- Applications will be inserted here by JavaScript -->
+            
           </div>
         </div>
     <script src = "index.js"></script>
