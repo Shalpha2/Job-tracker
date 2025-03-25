@@ -14,14 +14,14 @@ A responsive web application that helps job seekers organize their search proces
 - Select application status (Applied, Interview, Offer, Rejected)
 - write notes for the job
 - Display a list of saved applications
-- Fetch jobs from a public API
-- Edit or delete saved applications
+- Fetch jobs 
+-  Delete saved applications
 
 ## Technologies Used
 - HTML
 - CSS
 - JavaScript
-- Use APi
+- db.json
 - JSON Server  for local development
 
 ## How to Run
@@ -33,7 +33,6 @@ A responsive web application that helps job seekers organize their search proces
 
 
 ## Future Enhancements
-- Edit/Delete functionality
 - Persistent backend integration
 - User authentication (Phase 3)
 - AI-powered application suggestions
@@ -42,4 +41,6 @@ A responsive web application that helps job seekers organize their search proces
 
 ## License
 
-© 2025 Shadrack. All rights reserved.
+This project is licensed under the MIT License.  
+See the [LICENSE](./LICENSE) file for more details.
+
