@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href ="style.css">
-    <title>Job Application Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Job Application Tracker</title>
 </head>
 <body>
-    <header>
-        <h1>Job Application Tracker</h1>
-      </header>
+  <header>
+    <h1>Job Application Tracker</h1>
+  </header>
 
-        <div class="form-container">
-          <h2>Add New Application</h2>
-          <form id="job-form">
-            <label for="jobTitle">Job Title</label>
-               <input type="text" id="jobTitle" name="jobTitle" required autocomplete="off"/>
+  <div class="applications-container">
+    <h2>My Applications</h2>
 
-            <label for="company">Company</label>
-              <input type="text" id="company" name="company" required autocomplete="off"/>
-            </label for="status">Application Status <label>
-              <select id="status" name="status" required>
-                <option value="Applied">Applied</option>
-                <option value="Interview">Interview</option>
-                <option value="Offer">Offer</option>
-                <option value="Rejected">Rejected</option>
-              </select>
-            <label for="notes">Notes</label>
-              <textarea id="notes" name="notes" placeholder="Write anything"></textarea>
-            <button type="submit">Add Application</button>
-          </form>
-        </div>
-    
-        
-        <div class="applications-container">
-          <h2>My Applications</h2>
+    <button id="scroll-to-form-btn">Add Application</button>
 
-          <div class="search-sort-container">
-            <input type="text" id="search-input" placeholder="Search by job title or company..." />
-            <select id="sort-options">
-                <option value="">Sort By</option>
-                <option value="company">Company Name</option>
-                <option value="status">Status</option>
-            </select>
-        </div>
-        
-          <ul id="applications-list">
-            
-            
-          </ul>
-        </div>
-    <script src = "index.js"></script>
+
+    <div class="search-sort-container">
+      <input type="text" id="search-input" placeholder="Search by job title or company..." />
+      <select id="sort-options">
+        <option value="">Sort By</option>
+        <option value="company">Company Name</option>
+        <option value="status">Status</option>
+      </select>
+    </div>
+
+    <ul id="applications-list">
+      
+    </ul>
+  </div>
+
+  
+  <div class="form-container" id="form-section">
+    <h2>Add New Application</h2>
+    <form id="job-form">
+      <label for="jobTitle">Job Title</label>
+      <input type="text" id="jobTitle" name="jobTitle" required autocomplete="off" />
+
+      <label for="company">Company</label>
+      <input type="text" id="company" name="company" required autocomplete="off" />
+
+      <label for="status">Application Status</label>
+      <select id="status" name="status" required>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Offer">Offer</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" placeholder="Write anything"></textarea>
+
+      <button type="submit">Add Application</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
