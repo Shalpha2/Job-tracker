@@ -16,6 +16,7 @@ A responsive web application that helps job seekers organize their search proces
 - Display a list of saved applications
 - Fetch jobs 
 -  Delete saved applications
+- Use filter to sort and also the search bar
 
 ## Technologies Used
 - HTML
@@ -37,7 +38,7 @@ A responsive web application that helps job seekers organize their search proces
 - User authentication (Phase 3)
 - AI-powered application suggestions
 -  Calendar integration for interviews
--Implement filtering or sorting by status or company 
+
 
 ## License
 

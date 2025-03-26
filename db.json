@@ -48,6 +48,20 @@
       "company": "SkyNet",
       "status": "Applied",
       "notes": "Reached out to recruiter on Twitter"
+    },
+    {
+      "id": "0f1d",
+      "jobTitle": "Hardware Engineer",
+      "company": "safari",
+      "status": "Rejected",
+      "notes": "it was rejected due lack of cv"
+    },
+    {
+      "id": "b55f",
+      "jobTitle": "Data Manager",
+      "company": "Tech savanah",
+      "status": "Interview",
+      "notes": "Taking interview on 21st April"
     }
   ]
 }
