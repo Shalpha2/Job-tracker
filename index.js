@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     let allApplications = [];
   
-    fetch("http://localhost:3000/applications")
+    fetch("https://job-tracker-s9oa.onrender.com")
       .then((response) => response.json())
       .then((applications) => {
         allApplications = applications;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         notes: event.target.notes.value,
       };
   
-      fetch("http://localhost:3000/applications", {
+      fetch("https://job-tracker-s9oa.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     function handleDelete(appId, li) {
-      fetch(`http://localhost:3000/applications/${appId}`, {
+      fetch(`https://job-tracker-s9oa.onrender.com/${appId}`, {
         method: "DELETE",
       })
         .then((response) => {
